@@ -1,0 +1,93 @@
+
+header{
+  background-color: gray;
+  color:black;
+  text-align:center;
+}
+
+.favicon{
+  align-content: flex-start;
+}
+
+.main{
+    background-color: black;
+    color:white;
+    border:2px solid rgb(238, 51, 18);
+}
+
+.flex-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+} 
+
+body{
+    background-image: url(../ImageS/1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.Item1{
+height:500px;
+width:500px;
+display: flex;
+flex-basis: auto;
+flex-direction: row;
+justify-content: flex-end;}
+
+.Item2{
+height:500px;
+width:500px;
+display: flex;
+flex-basis: auto;
+flex-direction: row;
+justify-content: flex-end;}
+
+.Item3{
+height:500px;
+width: 500px;
+display: flex;
+flex-basis: auto;
+flex-direction: row;
+justify-content: flex-end;}
+
+.Item4{
+height:500px;
+width:500px;
+display: flex;
+flex-basis: 400px;
+flex-direction: row;
+justify-content: flex-end;
+}
+
+@-webkit-keyframes logo_wiggle{
+  transform: rotate(25deg) scale(.75);
+
+}
+
+@keyframes logo_wiggle{
+ transform: rotate(25deg) scale(.75);
+
+} 
+
+#logo{
+  animation-name: logo_wiggle; 
+  animation-duration: 3s;
+ 
+}
+
+@media screen and (prefers-reduced-motion:reduce){
+  #logo{
+    animation-name: disable;
+  }
+}
+
+@media screen and (min-width: 850px){
+  .flex-container{
+    display:flex;
+    flex-direction: row;
+    flex-basis: 225px;
+} 
+

@@ -1,0 +1,98 @@
+nav{
+    background-color: gray;
+    text-align: center;
+}
+
+body{
+    background-color: white;
+    font-size: 18px;
+}
+
+
+header{
+  background-attachment: fixed;     
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-size: cover;       
+  color: white;
+  height: 400px;                
+  background-image: url(../Images/unnamed\ \(1\).jpg);
+}
+
+.container{
+  display:grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+  row-gap: 15px;
+
+}
+
+.Merfolk, .Deathworm, .Kongamato, .Mapinguari, .Nessie, .Kraken, .Yeti{
+  grid-column: 2/span 1;
+  overflow: auto;
+  
+}
+
+.Merfolk-image, .Deathworm-image, .Kongamato-image, .Mapinguari-image, .Nessie-image,.Kraken-image,.Yeti-image{
+  grid-column: 1/ -1;
+  height: auto;
+  widows: auto;
+  overflow: hidden;
+  
+}
+
+.Merfolk, .Merfolk-image{
+    grid-row: 2/ auto;
+}
+
+.Deathworm,.Deathworm-image{
+    grid-row: 3/ auto;
+}
+
+.Kongamato, .Kongamato-image{
+    grid-row: 4/auto;
+}
+
+.Mapinguari, .Mapinguari-image{
+    grid-row: 5/auto;
+}
+
+.Nessie, .Nessie-image{
+    grid-row: 6/auto;
+}
+
+.Kraken, .Kraken-image{
+    grid-row: 7/auto;
+}
+
+.Yeti, .Yeti-image{
+    grid-row: 8/auto;
+}
+
+.text{
+ background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 30px;
+  align-self: center;
+}
+
+@media all and (min-width: 800px){
+  nav{
+    padding: 30px 0px;
+    text-align:right;
+    vertical-align: middle;
+  }
+
+  .container{
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 400px 400px 400px 400px  400px 400px 400px 400px;
+  }
+
+  .Merfolk, .Deathworm,.Kongamato,.Mapinguari,.Nessie-image, .Kraken-image,.Yeti-image{
+    grid-column: 3/span 2;
+  }
+
+  .Merfolk-image, .Deathworm-image,.Kongamato-image,.Mapinguari-image, .Nessie, .Kraken, .Yeti{
+    grid-column:2/span 2;
+  }
+}
